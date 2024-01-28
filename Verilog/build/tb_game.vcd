@@ -1,0 +1,303 @@
+$date
+	Sun Jan 28 06:48:26 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_game $end
+$var wire 3 ! P2_POS [2:0] $end
+$var wire 3 " P1_POS [2:0] $end
+$var wire 2 # HP2 [1:0] $end
+$var wire 2 $ HP1 [1:0] $end
+$var reg 6 % P1 [5:0] $end
+$var reg 6 & P2 [5:0] $end
+$var reg 1 ' clk $end
+$var reg 1 ( rst $end
+$scope module gg $end
+$var wire 1 ' CLK $end
+$var wire 6 ) P1 [5:0] $end
+$var wire 6 * P2 [5:0] $end
+$var wire 1 ( RST $end
+$var wire 3 + P2_POS [2:0] $end
+$var wire 3 , P1_POS [2:0] $end
+$var wire 2 - HP2 [1:0] $end
+$var wire 2 . HP1 [1:0] $end
+$scope module M1 $end
+$var wire 1 ' CLK $end
+$var wire 6 / P1 [5:0] $end
+$var wire 6 0 P2 [5:0] $end
+$var wire 1 ( RST $end
+$var wire 3 1 position [2:0] $end
+$var wire 2 2 Health [1:0] $end
+$var parameter 4 3 S1_1 $end
+$var parameter 4 4 S1_2 $end
+$var parameter 4 5 S1_3 $end
+$var parameter 4 6 S2_1 $end
+$var parameter 4 7 S2_2 $end
+$var parameter 4 8 S2_3 $end
+$var parameter 4 9 S3_1 $end
+$var parameter 4 : S3_2 $end
+$var parameter 4 ; S3_3 $end
+$var parameter 4 < Sx_0 $end
+$var reg 3 = distance [2:0] $end
+$var reg 3 > op_pos [2:0] $end
+$var reg 3 ? self_pos [2:0] $end
+$var reg 4 @ state [3:0] $end
+$var reg 1 A wait_counter $end
+$upscope $end
+$scope module M2 $end
+$var wire 1 ' CLK $end
+$var wire 6 B P1 [5:0] $end
+$var wire 6 C P2 [5:0] $end
+$var wire 1 ( RST $end
+$var wire 3 D position [2:0] $end
+$var wire 2 E Health [1:0] $end
+$var parameter 4 F S4_1 $end
+$var parameter 4 G S4_2 $end
+$var parameter 4 H S4_3 $end
+$var parameter 4 I S5_1 $end
+$var parameter 4 J S5_2 $end
+$var parameter 4 K S5_3 $end
+$var parameter 4 L S6_1 $end
+$var parameter 4 M S6_2 $end
+$var parameter 4 N S6_3 $end
+$var parameter 4 O Sx_0 $end
+$var reg 3 P distance [2:0] $end
+$var reg 3 Q op_pos [2:0] $end
+$var reg 3 R self_pos [2:0] $end
+$var reg 4 S state [3:0] $end
+$var reg 1 T wait_counter $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 O
+b111 N
+b110 M
+b101 L
+b1011 K
+b1010 J
+b1001 I
+b1111 H
+b1110 G
+b1101 F
+b0 <
+b1111 ;
+b1110 :
+b1101 9
+b1011 8
+b1010 7
+b1001 6
+b111 5
+b110 4
+b101 3
+$end
+#0
+$dumpvars
+0T
+b111 S
+b110 R
+b1 Q
+b100 P
+b11 E
+b110 D
+b1000 C
+b10000 B
+0A
+b111 @
+b1 ?
+b110 >
+b100 =
+b11 2
+b1 1
+b1000 0
+b10000 /
+b11 .
+b11 -
+b1 ,
+b110 +
+b1000 *
+b10000 )
+1(
+0'
+b1000 &
+b10000 %
+b11 $
+b11 #
+b1 "
+b110 !
+$end
+#10000
+b101 !
+b101 +
+b101 D
+b10 "
+b10 ,
+b10 1
+b1011 @
+b10 =
+b101 >
+b10 ?
+b1011 S
+b10 P
+b101 R
+b10 Q
+1'
+#20000
+0'
+#30000
+b100 !
+b100 +
+b100 D
+b11 "
+b11 ,
+b11 1
+b1111 S
+b0 P
+b100 R
+b11 Q
+b1111 @
+b0 =
+b100 >
+b11 ?
+1'
+#35000
+b10 &
+b10 *
+b10 0
+b10 C
+b10 %
+b10 )
+b10 /
+b10 B
+#40000
+0'
+#50000
+b101 !
+b101 +
+b101 D
+b10 "
+b10 ,
+b10 1
+b101 >
+b10 ?
+b1011 @
+b10 Q
+b101 R
+b1011 S
+1'
+#55000
+b1000 &
+b1000 *
+b1000 0
+b1000 C
+b1 %
+b1 )
+b1 /
+b1 B
+#60000
+0'
+#70000
+b100 !
+b100 +
+b100 D
+b10 #
+b10 -
+b10 E
+b1110 S
+b1 P
+b100 R
+b1 =
+b100 >
+1'
+#75000
+b10 &
+b10 *
+b10 0
+b10 C
+b10000 %
+b10000 )
+b10000 /
+b10000 B
+#80000
+0'
+#90000
+b1 $
+b1 .
+b1 2
+b11 "
+b11 ,
+b11 1
+b1101 @
+b0 =
+b11 ?
+b0 P
+b11 Q
+1'
+#95000
+b100 &
+b100 *
+b100 0
+b100 C
+b100 %
+b100 )
+b100 /
+b100 B
+#100000
+0'
+#110000
+1T
+1A
+1'
+#120000
+0'
+#130000
+b10 $
+b10 .
+b10 2
+b11 #
+b11 -
+b11 E
+b1110 @
+1A
+b1111 S
+1T
+1'
+#135000
+b1 &
+b1 *
+b1 0
+b1 C
+b10 %
+b10 )
+b10 /
+b10 B
+#140000
+0'
+#150000
+b1 #
+b1 -
+b1 E
+b1101 S
+0T
+0A
+1'
+#155000
+b10 &
+b10 *
+b10 0
+b10 C
+b100000 %
+b100000 )
+b100000 /
+b100000 B
+#160000
+0'
+#170000
+1'
+#175000
