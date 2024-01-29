@@ -1,6 +1,6 @@
 `include "Game.v"
 
-module tb_game;
+module tb_sample;
     reg clk,rst;
     reg [5:0] P1,P2;
 
@@ -20,14 +20,14 @@ module tb_game;
     );
 
     initial begin
-        $dumpfile("tb_game.vcd");
-        $dumpvars(0, tb_game);
+        $dumpfile("tb_sample.vcd");
+        $dumpvars(0, tb_sample);
     end
 
     initial begin
         rst = 1'b1;
         clk = 1'b0;
-        repeat (22)
+        repeat (18)
         #10 clk =~clk;
     end
 
@@ -36,32 +36,23 @@ module tb_game;
         P2 = 6'b001000;
         #35;
         P1 = 6'b000010;
-        P2 = 6'b100000;
-        #20;
-        P1 = 6'b000010;
-        P2 = 6'b000001;
-        #20;
-        P1 = 6'b000010;
         P2 = 6'b000010;
-        #20;
-        P1 = 6'b010000;
-        P2 = 6'b000100;
-        #20;
-        P1 = 6'b100000;
-        P2 = 6'b000100;
-        #20;
-        P1 = 6'b000010;
-        P2 = 6'b000001;
-        #20;
-        P1 = 6'b000001;
-        P2 = 6'b100000;
-        #20;
-        P1 = 6'b001000;
-        P2 = 6'b000001;
         #20;
         P1 = 6'b000001;
         P2 = 6'b001000;
-        #20
+        #20;
+        P1 = 6'b010000;
+        P2 = 6'b000010;
+        #20;
+        P1 = 6'b000100;
+        P2 = 6'b000100;
+        #40;
+        P1 = 6'b000010;
+        P2 = 6'b000001;
+        #20;
+        P1 = 6'b100000;
+        P2 = 6'b000010;
+        #20;
         $finish;
 
     end
